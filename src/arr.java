@@ -27,6 +27,7 @@ public class arr {
                 }
             }
         }
+        ?
     }
 
     static int minDiff(int arr[])
