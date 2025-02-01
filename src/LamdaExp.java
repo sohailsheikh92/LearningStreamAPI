@@ -22,5 +22,6 @@ public class LamdaExp {
             System.out.println(s);
         };
         im2.lambda2("printed lamemda with arguments");
+        //done
     }
 }
