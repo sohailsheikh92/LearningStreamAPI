@@ -7,21 +7,30 @@ interface ImplementingLambda{
 interface ImplementingLambda2
 {
     //lambda with arguments
-    public void lambda2(String str);
+    public int add(int x,int y);
+}
+
+interface Evenornot{
+    public void check(int x);
 }
 public class LamdaExp {
     public static void main(String[] args) {
-        ImplementingLambda im ;
-        im=() -> {
-            System.out.println("implemented lambda expression");
+//        ImplementingLambda im ;
+//        im=() -> {
+//            System.out.println("implemented lambda expression");
+//        };
+//        im.lambda();
+//        ImplementingLambda2 im2 = (a,b)->{
+//            return (a+b);
+//        };
+//        System.out.println(im2.add(4,4));
+
+        Evenornot e =(a)->{
+            if(a%2==0)
+                System.out.println("even");
+            else
+                System.out.println("not even");
         };
-        im.lambda();
-        ImplementingLambda2 im2;
-        im2 =(s) -> {
-            System.out.println("lambda with arguments");
-            System.out.println(s);
-        };
-        im2.lambda2("printed lamemda with arguments");
-        //done
+        e.check(5);
     }
 }
