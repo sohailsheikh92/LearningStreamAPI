@@ -5,8 +5,8 @@ public class LinkedList {
         head.next=new Node(20);
         head.next.next=new Node(30);
         head.next.next.next=new Node(40);
-        display(head);
-
+//        display(head);
+        recursiveDisplay(head);
     }
     static void display(Node head){
         Node temp=head;
@@ -15,6 +15,17 @@ public class LinkedList {
             temp=temp.next;
         }
         System.out.println("null");
+    }
+
+    static void recursiveDisplay(Node head){
+        if(head==null){
+            System.out.println("null");
+            return ;
+        }
+        System.out.print(head.data+"->");
+        head=head.next;
+        recursiveDisplay(head);
+
     }
 }
 
