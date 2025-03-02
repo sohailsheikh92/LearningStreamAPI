@@ -2,7 +2,8 @@ public class LearningGenerics {
     public static void main(String[] args) {
         Generics<String> obj=new Generics<>();
         obj.setData("ALhamdulillah");
-        System.out.println(obj.setData());
+        String print= obj.getData();
+        System.out.println(print);
 
     }
 }
@@ -12,8 +13,7 @@ class Generics<T>{
     public void setData(T v){
         var=v;
     }
-    public T setData(){
+    public T getData(){
         return var;
     }
-
 }
